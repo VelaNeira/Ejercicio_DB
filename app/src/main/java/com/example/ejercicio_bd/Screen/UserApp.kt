@@ -3,8 +3,6 @@ package com.example.ejercicio_bd.Screen
 import android.widget.Toast
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
@@ -176,7 +174,7 @@ fun UserApp(userRepository: UserRepository) {
     }
 }
 
-// Componente de entrada de usuario
+// Componente de entrada de usuario -> Se ayudo con IA para saber como hacer esta parte.
 @Composable
 fun UserInputField(value: String, label: String, showError: Boolean, onValueChange: (String) -> Unit, keyboardOptions: KeyboardOptions = KeyboardOptions.Default) {
     TextField(
